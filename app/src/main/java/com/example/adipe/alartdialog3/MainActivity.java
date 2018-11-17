@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     Toast.makeText(MainActivity.this, "Input is unavailable", Toast.LENGTH_SHORT).show();
                 } else {
                     ft = Double.parseDouble(etfi.getText().toString());
+
                     dm = Double.parseDouble(etd.getText().toString());
                     tx.setText(Double.toString(ft));
                     td.setText(Double.toString(dm));
