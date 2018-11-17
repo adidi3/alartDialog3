@@ -92,8 +92,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         ad.setPositiveButton("Calculate", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int j) {
-                ft = Double.parseDouble(String.valueOf(etfi));
-                dm = Double.parseDouble(String.valueOf(etd));
+                ft = Double.parseDouble(etfi.getText().toString());
+                dm = Double.parseDouble(etd.getText().toString());
                 Toast.makeText(MainActivity.this, "" + j, Toast.LENGTH_LONG).show();
                 if ((etfi.getText().toString().equals("")) || (etfi.getText().toString().equals(".-")) || ((etfi.getText().toString().equals(".")) || (etfi.getText().toString().equals("-")) || (etfi.getText().toString().equals("-."))) ||
                         ((etd.getText().toString().equals("")) || (etd.getText().toString().equals(".-")) || ((etd.getText().toString().equals(".")) || (etd.getText().toString().equals("-")) || (etd.getText().toString().equals("-."))))) {
