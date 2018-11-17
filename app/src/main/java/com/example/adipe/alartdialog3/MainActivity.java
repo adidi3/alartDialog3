@@ -92,14 +92,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         ad.setPositiveButton("Calculate", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int j) {
-                ft = Double.parseDouble(etfi.getText().toString());
-                dm = Double.parseDouble(etd.getText().toString());
+
                 Toast.makeText(MainActivity.this, "" + j, Toast.LENGTH_LONG).show();
                 if ((etfi.getText().toString().equals("")) || (etfi.getText().toString().equals(".-")) || ((etfi.getText().toString().equals(".")) || (etfi.getText().toString().equals("-")) || (etfi.getText().toString().equals("-."))) ||
                         ((etd.getText().toString().equals("")) || (etd.getText().toString().equals(".-")) || ((etd.getText().toString().equals(".")) || (etd.getText().toString().equals("-")) || (etd.getText().toString().equals("-."))))) {
                     Toast.makeText(MainActivity.this, "Input is unavailable", Toast.LENGTH_SHORT).show();
                 } else {
-
+                    ft = Double.parseDouble(etfi.getText().toString());
+                    dm = Double.parseDouble(etd.getText().toString());
                     tx.setText(Double.toString(ft));
                     td.setText(Double.toString(dm));
                     cs[0] = Double.toString(ft);
